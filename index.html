@@ -27,6 +27,7 @@
       text-decoration: none;
       box-shadow: 0 0 15px #00ff00;
       transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+      animation: pulse 2s infinite;
     }
     a.download-btn:hover {
       background-color: #009900;
@@ -38,12 +39,20 @@
       font-size: 14px;
       color: #ccc;
     }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00ff00; }
+      50% { box-shadow: 0 0 25px #00ff00; }
+      100% { box-shadow: 0 0 10px #00ff00; }
+    }
   </style>
 </head>
 <body>
   <h1>Luigi’s Mansion Fanmade Lost Chapter</h1>
   <p>Click below to download the map:</p>
-  <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1HDhW0he8LiP-gVpEVm5GnVVts66kB3kS">⬇ Download ZIP</a>
+  <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1HDhW0he8LiP-gVpEVm5GnVVts66kB3kS">
+    ⬇ Download ZIP
+  </a>
   <p>Original Minecraft build by SirCap on Planet Minecraft</p>
   <p>All references to Luigi’s Mansion belong to Nintendo</p>
 </body>
